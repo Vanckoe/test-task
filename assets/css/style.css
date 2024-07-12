@@ -1,0 +1,363 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* reset styles ^ */
+.ubuntu-light {
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.ubuntu-regular {
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.ubuntu-medium {
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.ubuntu-bold {
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.ubuntu-light-italic {
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 300;
+    font-style: italic;
+}
+
+.ubuntu-regular-italic {
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 400;
+    font-style: italic;
+}
+
+.ubuntu-medium-italic {
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 500;
+    font-style: italic;
+}
+
+.ubuntu-bold-italic {
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 700;
+    font-style: italic;
+}
+
+/*fonts  ^*/
+body {
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.container-full {
+    margin-left: 10px;
+    padding-top: 10px;
+    margin-right: 10px;
+    gap: 10px;
+    display: flex;
+    flex-direction: row;
+}
+
+.logo {
+    padding: 20px;
+    background-color: #1097b0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 10px;
+    font-weight: 900;
+    color: white;
+}
+
+.title-text {
+    font-weight: 900;
+    width: 100%;
+}
+
+.content .logo {
+    padding: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.arrow {
+    display: block;
+    padding: 5px;
+    background-color: #6cbac8;
+    border-radius: 6px;
+    transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+.logo-icon-menu {
+    display: none;
+}
+
+.logo-icon-menu {
+    display: block;
+    padding: 5px;
+    background-color: #6cbac8;
+    border-radius: 6px;
+    transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+.arrow:active {
+    transform: scale(0.95);
+    background-color: #5aa0ad;
+}
+
+.menu-list {
+    display: grid;
+    grid-template-columns: 20% 1fr;
+    gap: 10px;
+    margin-top: 10px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    height: 88vh;
+}
+
+.grid {
+    display: grid;
+    grid-template-rows: repeat(6, 50px);
+    gap: 10px;
+    justify-items: center;
+    align-items: center;
+}
+
+.grid div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.left-grid {
+    background-color: #1097b0;
+    border-radius: 7px;
+}
+
+.menu-image {
+    width: 30px;
+    height: 30px;
+}
+
+.right-grid {
+    justify-items: start;
+    align-items: center;
+    padding-left: 5px;
+}
+
+.menu-btn {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: black;
+    transition: transform 0.2s ease;
+}
+
+.menu-btn:active {
+    transform: scale(0.95);
+    color: rgba(12, 57, 0, 0.9);
+}
+
+/*content start*/
+.user-cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    border-radius: 10px;
+    margin-top: 10px;
+    justify-items: start;
+    justify-content: end;
+    align-content: center;
+}
+
+.card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 10px;
+    width: 95%;
+}
+
+.card h2 {
+    margin: 0 0 10px;
+    font-size: 1.5em;
+}
+
+.card p {
+    margin: 5px 0;
+    font-size: 14px;
+}
+
+/*content end*/
+
+.flex-col {
+    display: flex;
+    flex-direction: row;
+}
+
+.container {
+    width: 100%;
+    padding: 1rem;
+    margin: 0 auto;
+    box-sizing: border-box;
+    background-color: #5e4d4d;
+}
+
+.container {
+    max-width: 100%;
+}
+
+
+  .menu {
+    /* display: none; */
+    position: absolute;
+    left: 0px;
+    top: 0;
+    margin: auto;
+    padding-left: auto;
+    padding-right: auto;
+    width: 99%;
+    background-color: aliceblue;
+}
+
+.user-cards {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.content {
+    width: none;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.arrow {
+    display: none;
+}
+
+.logo-icon-menu {
+    display: block;
+}
+
+.relative {
+    position: relative;
+}
+
+body.menu-open {
+    overflow: hidden;
+}
+
+@media screen and (max-width: 768px) {
+    .menu {
+        position: fixed;
+        display: none;
+    }
+    .menu.open {
+        display: block;
+    }
+    .menu .logo {
+        flex-direction: row-reverse;
+        justify-content: flex-end;
+    }
+    .menu .logo span {
+        margin: 0 auto;
+    }
+    .menu-list {
+        height: 100vh;
+    }
+}
+
+@media (min-width: 768px) {
+    .container {
+        max-width: 730px;
+    }
+
+    .content {
+        width: 100%;
+        padding-left: 22%;
+    }
+
+    .menu {
+        display: block;
+        position: fixed;
+        padding-top: 10px;
+        margin: none;
+        padding-left: 10px;
+        padding-right: none;
+        width: 21%;
+        background-color: none;
+    }
+    .menu {
+        width: 21%;
+        position: fixed;
+    }
+}
+
+@media (min-width: 1024px) {
+    .container {
+        max-width: 940px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1000px;
+    }
+}
+
+@media (min-width: 1400px) {
+    .container {
+        max-width: 1170px;
+    }
+}
