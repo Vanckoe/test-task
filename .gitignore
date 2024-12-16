@@ -1,0 +1,22 @@
+# Игнорирование папки node_modules
+node_modules/
+
+# Игнорирование lock-файлов
+bun.lockb
+package-lock.json
+yarn.lock
+
+# Игнорирование папки assets/css/output (если временные файлы здесь)
+assets/css/output.css
+
+# Игнорирование логов
+*.log
+
+# Игнорирование сборочных файлов
+dist/
+build/
+
+# Игнорирование временных файлов редактора
+*.tmp
+*.swp
+.vscode/
