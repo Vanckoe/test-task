@@ -128,3 +128,82 @@ switch (parseInt(month)) {
     alert("Ошибка: введите число от 1 до 12.");
     console.log("Ошибка: введите число от 1 до 12.");
 }
+
+function greet() {
+  console.log("Привет, мир!");
+}
+greet();
+
+console.log("___________________");
+
+function sayHello(name) {
+  console.log(`Привет, ${name}!`);
+}
+sayHello("Таяна");
+sayHello("Олжас");
+
+console.log("___________________");
+
+function sum(a, b) {
+  return a + b;
+}
+console.log(sum(5, 10));
+
+console.log("___________________");
+
+function isEven(number) {
+  return number % 2 === 0;
+}
+console.log(isEven(4));
+console.log(isEven(7));
+
+console.log("___________________");
+
+function max(a, b) {
+  if (a > b) {
+    return a;
+  } else if (a < b) {
+    return b;
+  } else {
+    return "Числа равны";
+  }
+}
+console.log(max(10, 5));
+console.log(max(3, 3));
+
+console.log("___________________");
+
+function getInitials(firstName, lastName) {
+  return `${firstName[0]}.${lastName[0]}.`;
+}
+console.log(getInitials("Алиса", "Боброва"));
+
+console.log("___________________");
+
+function square(number) {
+  return number * number;
+}
+function cube(number) {
+  return square(number) * number;
+}
+console.log(cube(3));
+
+console.log("___________________");
+
+const sumArrow = (a, b) => a + b;
+console.log(sumArrow(5, 7));
+
+console.log("___________________");
+
+function getFactorial(n) {
+  if (n === 0 || n === 1) {
+    return 1;
+  }
+  let factorial = 1;
+  for (let i = 1; i <= n; i++) {
+    factorial *= i;
+  }
+  return factorial;
+}
+console.log(getFactorial(5));
+console.log(getFactorial(0));
